@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1 id="title"> Survey web application</h1>
+<p id="description">We are looking for new people to our developer team!</p>
+
+<form id="survey-form">
+    <h3>Personal details</h3>
+        <div>
+            <div class="cl-30">
+                <label id="name-number" for="name">Full Name </label>
+            </div>
+            <div class="cl-70">
+                <input type="text" id="name" name="Name" placeholder="Enter your name" required>
+            </div>
+        </div>
+        <div>
+            <div class="cl-30">
+                <label id="email-number" for="email">Email </label>
+            </div>
+            <div class="cl-70">    
+                <input type="email" id="email" name="Email" placeholder="Email" required>
+            </div>
+        </div>
+        <div>
+            <div class="cl-30">
+                <label id="number-label" for="number">Age </label>
+            </div>
+            <div class="cl-70">
+                <input type="number" id="number" name = "Age" placeholder="Age" min="0" max="150" required>
+            </div>
+        </div>
+
+    <div>
+        <div class="cl-30">
+            <label for="dropdown"> Types of employment </label>
+        </div>
+        <div class="cl-70">
+            <select id="dropdown" name="drop">
+                <optgroup label="Options">
+                    <option value="item1">Full Time</option>
+                    <option value="item2">Part time</option>
+                    <option value="item3">Student</option>
+                    <option value="item4">Unemployed</option>
+                </optgroup>
+            </select>
+        </div>
+    </div>
+
+    <h3>Level of your skills</h3>
+        <label for="it1" id="lab-it1" >Junior </label>
+        <input type="radio" id="it1" name="it" value="one" required><br>
+        
+        <label for="it2" id="lab-it2">Middle</label>
+        <input type="radio" id="it2" name="it" value="two"><br>
+        
+        <label for="it3" id = "lab-it3">Senior</label>
+        <input type="radio" id="it3" name = "it" value="three"><br>
+        
+
+    
+        <h3>Proficiency in programming languages</h3>
+        <label for="check1" id="lab-check1">C/C++</label>
+        <input type="checkbox" id="check1" name="check" value="ch1"><br>
+        
+        <label for="check2" id="lab-check2">Java</label>
+        <input type="checkbox" id="check2" name="check" value="ch2"><br>
+        
+        <label for="check3" id = "lab-check3">Javascript</label>
+        <input type="checkbox" id="check3" name = "check" value="ch3"><br>    
+
+        <label for="check4" id = "lab-check4">Ruby</label>
+        <input type="checkbox" id="check4" name = "check" value="ch3"><br>    
+
+        <label for="check5" id = "lab-check5">Assembler</label>
+        <input type="checkbox" id="check5" name = "check" value="ch3"><br>    
+    
+
+    <h3>Additional information about yourself</h3>
+    <div class="cl-30">
+        <label for="textar">Write your comment</label>
+    </div>
+    <div class="cl-70">
+        <textarea id="textar" name="texxtarea" rows="10" cols="40" placeholder="Just some text..."></textarea>
+    </div>
+    <button type="submit" id="submit">Submit</button>
+</form>
+</body>
+</html>
