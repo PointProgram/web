@@ -1,4 +1,5 @@
 <h1>Survey web application</h1>
+<pre>
 USER STORY:
 #1: As a user, I can see a title with id="title" in H1 sized text.
 #2: As a user, I can see a short explanation with id="description" in P sized text.
@@ -23,3 +24,4 @@ using the name attribute.
 ute.
 #13: Inside the form element, I am presented with a textarea at the end for additional comments.
 #14: Inside the form element, I am presented with a button with id="submit" to submit all my inputs.
+</pre>
